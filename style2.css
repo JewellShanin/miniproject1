@@ -10,7 +10,6 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    overflow: scroll;
     
 }
 
@@ -117,6 +116,7 @@ section{
     background-size: cover;
     height: calc(100vh);
 }
+
 
 
 

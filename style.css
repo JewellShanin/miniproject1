@@ -2,19 +2,183 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(background6.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  
+    font-family: "Montserrat", sans-serif;
+    
 }
+
+nav{
+    background-color: #01452c;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: #bf804a;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #bf804a;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    color:#fff;
+    transition: .5s;
+}
+
+nav ul li a:hover{
+    color: #faac1b;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #bf804a;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #bf804a;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+section{
+    background: url(background8.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh);
+}
+
+
+
+
+/*footer*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+
+}
+@media (max-height:800px){
+    footer{
+        position: static;
+    }
+    header{
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed{
+    background-color: #01452c;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: center;
+    font: bold 16px sans-serif;
+    padding: 10px 10px 30px 20px;
+}
+
+
+
+.footer-distributed .footer-company-name{
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    justify-content: center;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 8px;
+}
+    
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #bf804a;
+    text-align: center;
+    justify-content: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 1px;
+}
+
+.footer-distributed .footer-icons a:hover{
+    color: #faac1b;
+
+}
+
 
 
 .nav-item{
@@ -44,6 +208,8 @@ ul li a{
 	transition: all 0.3s;
     
 }
+
+/*
 
 ul li a:hover{
 	color: #fff;

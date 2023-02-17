@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap");
+$enable-responsive-font-sizes:              true;
 * {
   margin: 0;
   padding: 0;
@@ -72,7 +73,7 @@ nav ul li a:hover{
 }
 @media (max-width: 952px){
     label.logo{
-        font-size: 30px;
+        font-size: 22px;
         padding-left: 50px;
     }
     nav ul li a{
@@ -111,11 +112,20 @@ nav ul li a:hover{
     }
 }
 
-section{
-    background: url(background8.jpg) no-repeat;
+section p{
+    background-image: url(background8.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh);
 }
+
+@media (max-width: 952px){
+    .section p{
+        background-size: clamp (15px, 1rem + 4rem, 100px) no-repeat;
+
+    }
+}
+
+
 
 
 
@@ -161,8 +171,8 @@ footer{
     
 .footer-distributed .footer-icons a{
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 100px;
+    height: 30px;
     cursor: pointer;
     border-radius: 2px;
     font-size: 20px;

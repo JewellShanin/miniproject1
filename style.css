@@ -125,10 +125,35 @@ section p{
     }
 }
 
+.header{
+    height: 650px;
+    width: 100%;
+    background-image: url('welcome.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.mid {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .mid h1 {
+    font-size: 4.5rem;
+    color:#fff;
+    font-family: "Pacifico", cursive;
+    letter-spacing: 5px;
+    text-shadow: 0 0 7px #bf804a;
+  }
 
-
-
+@media (max-width: 952px){
+    .mid h1{
+        font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+        
+    }
+}
 
 /*footer*/
 

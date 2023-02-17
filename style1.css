@@ -11,7 +11,8 @@ $enable-responsive-font-sizes:              true;
 
 body {
     font-family: "Montserrat", sans-serif;
-    overflow: scroll;
+    
+    
     
 }
 
@@ -124,6 +125,8 @@ section{
 
 
 
+
+
 .nav-item{
 	display: flex;
 	flex-direction: row;
@@ -202,9 +205,134 @@ ul li a{
 	transition: all 0.3s;
 }
 
+.container3{
+	margin: 80px 50px 0 80px;
+}
 
-/* attractions */
+.container3 h2{
+	color: #bf804a;
+	font-size: 3em;
+	font-weight: 700;
+    text-transform: uppercase;
+	word-spacing: 7px;
+    text-align: center;
+}
 
+.container3 h3{
+	color: black;
+	font-size: 2em;
+	font-weight: 600;
+    font-family: 'Montserrat';
+	word-spacing: 7px;
+    
+}
+
+.container3 p{
+	color: black;
+	font-size: 1.1em;
+	font-weight: 400;
+	width: 100%;
+	padding-bottom: 0px;
+    text-align: justify;
+}
+
+
+
+
+
+
+/*footer*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+
+}
+@media (max-height:800px){
+    footer{
+        max-height: max-content;
+        position: static;
+    }
+    header{
+        padding-top: 40px;
+    }
+}
+
+
+
+
+.footer-distributed{
+    background-color: #01452c;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: center;
+    font: bold 16px sans-serif;
+    padding: 10px 10px 30px 20px;
+}
+
+
+
+.footer-distributed .footer-company-name{
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    justify-content: center;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 8px;
+}
+    
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #bf804a;
+    text-align: center;
+    justify-content: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 1px;
+}
+
+.footer-distributed .footer-icons a:hover{
+    color: #faac1b;
+
+}
+
+
+
+.nav-item{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 30%;
+}
+
+.menu{
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 500;
+    word-spacing: 10px;
+	color: #fff;
+	transition: all 0.3s;
+    
+}
+
+ul li a{
+	text-decoration: none;
+	font-size: 1.1em;
+	font-weight: 800;
+    font-family: "Montserrat";
+	color: #bf804a;
+	transition: all 0.3s;
+    
+}
 
 
 

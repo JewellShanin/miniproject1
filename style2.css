@@ -12,6 +12,7 @@ $enable-responsive-font-sizes:              true;
 body {
     font-family: "Montserrat", sans-serif;
     
+    
 }
 
 nav{
@@ -221,6 +222,7 @@ footer{
     font-weight: normal;
     margin: 0;
     justify-content: center;
+    text-align: center;
 }
 
 .footer-distributed .footer-icons{
@@ -276,3 +278,9 @@ ul li a{
 	transition: all 0.3s;
     
 }
+
+
+
+
+
+

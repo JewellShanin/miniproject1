@@ -73,7 +73,7 @@ nav ul li a:hover{
 }
 @media (max-width: 952px){
     label.logo{
-        font-size: 22px;
+        font-size: 15px;
         padding-left: 50px;
     }
     nav ul li a{
@@ -128,7 +128,7 @@ section p{
 .header{
     height: 650px;
     width: 100%;
-    background-image: url('welcome.jpg');
+    background-image: url('welcome1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
